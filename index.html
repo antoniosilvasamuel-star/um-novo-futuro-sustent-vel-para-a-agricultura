@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFuturo | Agricultura Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">Agro<span>Futuro</span></div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">☰</button>
+            <nav id="navMenu">
+                <a href="#inicio">Início</a>
+                <a href="#pilares">Pilares</a>
+                <a href="#simulador">Simulador</a>
+                <button id="themeToggle" class="btn-theme">🌓 Alternar Tema</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>O Futuro da Agricultura é Sustentável</h1>
+            <p>Cultivando tecnologia, preservando a biodiversidade e garantindo a alimentação das próximas gerações.</p>
+            <a href="#simulador" class="btn-primary">Conheça o Impacto</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="container section">
+        <h2 class="section-title">Nossos Pilares de Inovação</h2>
+        <div class="grid-cards">
+            <div class="card">
+                <h3>💧 Gestão de Água</h3>
+                <p>Sistemas de irrigação gota a gota automatizados por IA que reduzem o desperdício de recursos hídricos em até 60%.</p>
+            </div>
+            <div class="card">
+                <h3>☀️ Energia Renovável</h3>
+                <p>Integração de painéis solares e biomassa para mover maquinários e fazendas verticais de forma autossuficiente.</p>
+            </div>
+            <div class="card">
+                <h3>🌱 Regeneração do Solo</h3>
+                <p>Práticas de rotação de culturas e biofertilizantes que devolvem os nutrientes naturais à terra sem defensivos químicos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="bg-light section">
+        <div class="container calculator-box">
+            <h2>Simulador de Impacto Verde</h2>
+            <p>Escolha uma prática sustentável e veja a estimativa de redução na emissão de CO₂ por hectare ao ano:</p>
+            
+            <div class="form-group">
+                <label for="pratica">Selecione uma prática:</label>
+                <select id="pratica">
+                    <option value="0">-- Selecione uma opção --</option>
+                    <option value="1.5">Uso de Energia Solar (-1.5 toneladas de CO₂)</option>
+                    <option value="2.2">Reflorestamento de Margens (-2.2 toneladas de CO₂)</option>
+                    <option value="0.8">Adubação Orgânica (-0.8 toneladas de CO₂)</option>
+                </select>
+            </div>
+
+            <button id="btnCalcular" class="btn-primary">Calcular Impacto</button>
+            <div id="resultado" class="resultado-hidden"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AgroFuturo. Cultivando um amanhã melhor.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
