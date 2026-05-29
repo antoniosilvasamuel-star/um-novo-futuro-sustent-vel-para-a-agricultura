@@ -1,12 +1,183 @@
-/* Configurações Gerais e Variáveis de Cores */
-:root {
-    --primary-color: #2e7d32;
-    --primary-light: #4caf50;
-    --text-color: #333333;
-    --bg-color: #ffffff;
-    --bg-light: #f4fbf7;
-    --card-bg: #ffffff;
-    --border-color: #e0e0e0;
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Vari
+body {
+    background-color: #f9fbf7;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d6a4f;
+}
+
+.logo span {
+    color: #52b788;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2d6a4f;
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(rgba(45, 106, 79, 0.7), rgba(45, 106, 79, 0.5)), 
+                url('https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-content button {
+    background-color: #52b788;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero-content button:hover {
+    background-color: #40916c;
+}
+
+/* Seção Pilares */
+.features {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.features h2 {
+    color: #2d6a4f;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.grid-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #40916c;
+    margin-bottom: 15px;
+}
+
+/* Seção Contato */
+.contact {
+    background-color: #d8f3dc;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #2d6a4f;
+    margin-bottom: 30px;
+}
+
+#form-contato {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-contato input, #form-contato textarea {
+    padding: 12px;
+    border: 1px solid #b7e4c7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#form-contato button {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#form-contato button:hover {
+    background-color: #1b4332;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1b4332;
+    color: #b7e4c7;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
